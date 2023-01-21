@@ -1,5 +1,11 @@
 # Sales-Overview
 
+
+# Business Request & User Stories
+The business request for this data analyst project was an executive sales report for sales managers. Based on the request that was made from the business we following user stories were defined to fulfill delivery and ensure that acceptance criteria’s were maintained throughout the project.
+
+<img width="440" alt="Business demand overview" src="https://user-images.githubusercontent.com/123259830/213882478-5e37b2e6-9aac-49a8-bc69-aa12bb829823.png">
+
 # Data Model
 Below is a screenshot of the data model after cleansed and prepared tables were read into Power BI.
 
@@ -17,11 +23,6 @@ The finished sales management dashboard with one page with works as a dashboard 
 
 # Customer details
 <img width="758" alt="Customer details" src="https://user-images.githubusercontent.com/123259830/213881867-b037393e-a351-4dcf-b080-88b9bbf8239b.png">
-
-# Business Request & User Stories
-The business request for this data analyst project was an executive sales report for sales managers. Based on the request that was made from the business we following user stories were defined to fulfill delivery and ensure that acceptance criteria’s were maintained throughout the project.
-
-<img width="440" alt="Business demand overview" src="https://user-images.githubusercontent.com/123259830/213882478-5e37b2e6-9aac-49a8-bc69-aa12bb829823.png">
 
 # Data Cleansing & Transformation (SQL)
 To create the necessary data model for doing analysis and fulfilling the business needs defined in the user stories the following tables were extracted using SQL.
