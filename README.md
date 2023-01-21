@@ -18,9 +18,6 @@ The finished sales management dashboard with one page with works as a dashboard 
 # Customer details
 <img width="758" alt="Customer details" src="https://user-images.githubusercontent.com/123259830/213881867-b037393e-a351-4dcf-b080-88b9bbf8239b.png">
 
-# SQL Statement 
-<![sql_statement](https://user-images.githubusercontent.com/123259830/213882189-7fb4f4b4-6111-4bbc-bd30-32225b8cd4bc.png)
-
 # Business Request & User Stories
 The business request for this data analyst project was an executive sales report for sales managers. Based on the request that was made from the business we following user stories were defined to fulfill delivery and ensure that acceptance criteria’s were maintained throughout the project.
 
