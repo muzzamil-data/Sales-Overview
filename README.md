@@ -1,5 +1,14 @@
 # Sales-Overview
 
+# Data Model
+Below is a screenshot of the data model after cleansed and prepared tables were read into Power BI.
+
+This data model also shows how FACT_Budget hsa been connected to FACT_InternetSales and other necessary DIM tables.
+
+<img width="764" alt="DATAMODEL" src="https://user-images.githubusercontent.com/123259830/213883378-b248cb58-3759-4576-856d-b6bab6772a89.png">
+
+# Sales Management Dashboard
+The finished sales management dashboard with one page with works as a dashboard and overview, with two other pages focused on combining tables for necessary details and visualizations to show sales over time, per customers and per products.
 
 <img width="765" alt="Salesoverview" src="https://user-images.githubusercontent.com/123259830/213881604-637727b5-3ab1-4c78-91b8-dbc55dd6ca04.png">
 
@@ -25,31 +34,25 @@ One data source (sales budgets) were provided in Excel format and were connected
 Below are the SQL statements for cleansing and transforming necessary data.
 
 # DIM_Calendar:
-# -- Cleansed DIM_Date Table --
-`SELECT 
-  [DateKey], 
-  [FullDateAlternateKey] AS Date, 
-  --[DayNumberOfWeek], 
-  [EnglishDayNameOfWeek] AS Day, 
-  --[SpanishDayNameOfWeek], 
-  --[FrenchDayNameOfWeek], 
-  --[DayNumberOfMonth], 
-  --[DayNumberOfYear], 
-  --[WeekNumberOfYear],
-  [EnglishMonthName] AS Month, 
-  Left([EnglishMonthName], 3) AS MonthShort,   -- Useful for front end date navigation and front end graphs.
-  --[SpanishMonthName], 
-  --[FrenchMonthName], 
-  [MonthNumberOfYear] AS MonthNo, 
-  [CalendarQuarter] AS Quarter, 
-  [CalendarYear] AS Year --[CalendarSemester], 
-  --[FiscalQuarter], 
-  --[FiscalYear], 
-  --[FiscalSemester] 
-FROM 
- [AdventureWorksDW2019].[dbo].[DimDate]
-WHERE 
-  CalendarYear >= 2019`
+<img width="737" alt="CLEANSED DIM_Date Table" src="https://user-images.githubusercontent.com/123259830/213883175-5db989f8-223f-421a-8170-c51443e365b6.png">
+
+# DIM_Customers:
+<img width="368" alt="Cleansed DIM_Customers Table " src="https://user-images.githubusercontent.com/123259830/213883209-a044f95d-b933-4516-ab2a-6221ddfa8102.png">
+
+# DIM_Products:
+<img width="410" alt="Cleansed DIM_Products Table " src="https://user-images.githubusercontent.com/123259830/213883239-ccedcc88-f61c-4fef-998c-0cfac1a4b0fc.png">
+
+# FACT_InternetSales:
+<img width="470" alt="Cleansed FACT_InternetSales Table" src="https://user-images.githubusercontent.com/123259830/213883269-1c8bae1c-b3b6-42f0-8410-913dde584538.png">
+
+
+
+
+
+
+
+
+
 
 
 
