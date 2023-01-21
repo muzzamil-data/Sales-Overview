@@ -25,8 +25,8 @@ One data source (sales budgets) were provided in Excel format and were connected
 Below are the SQL statements for cleansing and transforming necessary data.
 
 # DIM_Calendar:
-`-- Cleansed DIM_Date Table --
-SELECT 
+# -- Cleansed DIM_Date Table --
+`SELECT 
   [DateKey], 
   [FullDateAlternateKey] AS Date, 
   --[DayNumberOfWeek], 
