@@ -17,5 +17,39 @@ The business request for this data analyst project was an executive sales report
 
 <img width="440" alt="Business demand overview" src="https://user-images.githubusercontent.com/123259830/213882478-5e37b2e6-9aac-49a8-bc69-aa12bb829823.png">
 
+# Data Cleansing & Transformation (SQL)
+To create the necessary data model for doing analysis and fulfilling the business needs defined in the user stories the following tables were extracted using SQL.
+
+One data source (sales budgets) were provided in Excel format and were connected in the data model in a later step of the process.
+
+Below are the SQL statements for cleansing and transforming necessary data.
+
+# DIM_Calendar:
+`-- Cleansed DIM_Date Table --
+SELECT 
+  [DateKey], 
+  [FullDateAlternateKey] AS Date, 
+  --[DayNumberOfWeek], 
+  [EnglishDayNameOfWeek] AS Day, 
+  --[SpanishDayNameOfWeek], 
+  --[FrenchDayNameOfWeek], 
+  --[DayNumberOfMonth], 
+  --[DayNumberOfYear], 
+  --[WeekNumberOfYear],
+  [EnglishMonthName] AS Month, 
+  Left([EnglishMonthName], 3) AS MonthShort,   -- Useful for front end date navigation and front end graphs.
+  --[SpanishMonthName], 
+  --[FrenchMonthName], 
+  [MonthNumberOfYear] AS MonthNo, 
+  [CalendarQuarter] AS Quarter, 
+  [CalendarYear] AS Year --[CalendarSemester], 
+  --[FiscalQuarter], 
+  --[FiscalYear], 
+  --[FiscalSemester] 
+FROM 
+ [AdventureWorksDW2019].[dbo].[DimDate]
+WHERE 
+  CalendarYear >= 2019
+`
 
 
